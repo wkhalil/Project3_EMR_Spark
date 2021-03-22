@@ -1,0 +1,75 @@
+21/03/22 02:25:54 INFO RMProxy: Connecting to ResourceManager at ip-172-31-11-67.ec2.internal/172.31.11.67:8032
+21/03/22 02:25:54 INFO Client: Requesting a new application from cluster with 1 NodeManagers
+21/03/22 02:25:55 INFO Configuration: resource-types.xml not found
+21/03/22 02:25:55 INFO ResourceUtils: Unable to find 'resource-types.xml'.
+21/03/22 02:25:55 INFO ResourceUtils: Adding resource type - name = memory-mb, units = Mi, type = COUNTABLE
+21/03/22 02:25:55 INFO ResourceUtils: Adding resource type - name = vcores, units = , type = COUNTABLE
+21/03/22 02:25:55 INFO Client: Verifying our application has not requested more than the maximum memory capability of the cluster (12288 MB per container)
+21/03/22 02:25:55 INFO Client: Will allocate AM container, with 2432 MB memory including 384 MB overhead
+21/03/22 02:25:55 INFO Client: Setting up container launch context for our AM
+21/03/22 02:25:55 INFO Client: Setting up the launch environment for our AM container
+21/03/22 02:25:55 INFO Client: Preparing resources for our AM container
+21/03/22 02:25:55 WARN Client: Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.
+21/03/22 02:25:57 INFO Client: Uploading resource file:/mnt/tmp/spark-d4809cb7-09bb-4790-be70-85c8f361c210/__spark_libs__1432788515454850221.zip -> hdfs://ip-172-31-11-67.ec2.internal:8020/user/hadoop/.sparkStaging/application_1616379581127_0001/__spark_libs__1432788515454850221.zip
+21/03/22 02:25:59 INFO ClientConfigurationFactory: Set initial getObject socket timeout to 2000 ms.
+21/03/22 02:25:59 INFO Client: Uploading resource s3://proj3-emr-bucket/Pi.py -> hdfs://ip-172-31-11-67.ec2.internal:8020/user/hadoop/.sparkStaging/application_1616379581127_0001/Pi.py
+21/03/22 02:26:00 INFO S3NativeFileSystem: Opening 's3://proj3-emr-bucket/Pi.py' for reading
+21/03/22 02:26:00 INFO Client: Uploading resource file:/usr/lib/spark/python/lib/pyspark.zip -> hdfs://ip-172-31-11-67.ec2.internal:8020/user/hadoop/.sparkStaging/application_1616379581127_0001/pyspark.zip
+21/03/22 02:26:01 INFO Client: Uploading resource file:/usr/lib/spark/python/lib/py4j-0.10.7-src.zip -> hdfs://ip-172-31-11-67.ec2.internal:8020/user/hadoop/.sparkStaging/application_1616379581127_0001/py4j-0.10.7-src.zip
+21/03/22 02:26:01 INFO Client: Uploading resource file:/mnt/tmp/spark-d4809cb7-09bb-4790-be70-85c8f361c210/__spark_conf__1904437385118725780.zip -> hdfs://ip-172-31-11-67.ec2.internal:8020/user/hadoop/.sparkStaging/application_1616379581127_0001/__spark_conf__.zip
+21/03/22 02:26:02 INFO SecurityManager: Changing view acls to: hadoop
+21/03/22 02:26:02 INFO SecurityManager: Changing modify acls to: hadoop
+21/03/22 02:26:02 INFO SecurityManager: Changing view acls groups to:
+21/03/22 02:26:02 INFO SecurityManager: Changing modify acls groups to:
+21/03/22 02:26:02 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(hadoop); groups with view permissions: Set(); users  with modify permissions: Set(hadoop); groups with modify permissions: Set()
+21/03/22 02:26:03 INFO Client: Submitting application application_1616379581127_0001 to ResourceManager
+21/03/22 02:26:03 INFO YarnClientImpl: Submitted application application_1616379581127_0001
+21/03/22 02:26:04 INFO Client: Application report for application_1616379581127_0001 (state: ACCEPTED)
+21/03/22 02:26:04 INFO Client:
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1616379963668
+	 final status: UNDEFINED
+	 tracking URL: http://ip-172-31-11-67.ec2.internal:20888/proxy/application_1616379581127_0001/
+	 user: hadoop
+21/03/22 02:26:05 INFO Client: Application report for application_1616379581127_0001 (state: ACCEPTED)
+21/03/22 02:26:06 INFO Client: Application report for application_1616379581127_0001 (state: ACCEPTED)
+21/03/22 02:26:07 INFO Client: Application report for application_1616379581127_0001 (state: ACCEPTED)
+21/03/22 02:26:08 INFO Client: Application report for application_1616379581127_0001 (state: ACCEPTED)
+21/03/22 02:26:09 INFO Client: Application report for application_1616379581127_0001 (state: ACCEPTED)
+21/03/22 02:26:10 INFO Client: Application report for application_1616379581127_0001 (state: ACCEPTED)
+21/03/22 02:26:11 INFO Client: Application report for application_1616379581127_0001 (state: RUNNING)
+21/03/22 02:26:11 INFO Client:
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: ip-172-31-11-67.ec2.internal
+	 ApplicationMaster RPC port: 41325
+	 queue: default
+	 start time: 1616379963668
+	 final status: UNDEFINED
+	 tracking URL: http://ip-172-31-11-67.ec2.internal:20888/proxy/application_1616379581127_0001/
+	 user: hadoop
+21/03/22 02:26:12 INFO Client: Application report for application_1616379581127_0001 (state: RUNNING)
+21/03/22 02:26:13 INFO Client: Application report for application_1616379581127_0001 (state: RUNNING)
+21/03/22 02:26:14 INFO Client: Application report for application_1616379581127_0001 (state: RUNNING)
+21/03/22 02:26:15 INFO Client: Application report for application_1616379581127_0001 (state: RUNNING)
+21/03/22 02:26:16 INFO Client: Application report for application_1616379581127_0001 (state: RUNNING)
+21/03/22 02:26:17 INFO Client: Application report for application_1616379581127_0001 (state: RUNNING)
+21/03/22 02:26:18 INFO Client: Application report for application_1616379581127_0001 (state: FINISHED)
+21/03/22 02:26:18 INFO Client:
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: ip-172-31-11-67.ec2.internal
+	 ApplicationMaster RPC port: 41325
+	 queue: default
+	 start time: 1616379963668
+	 final status: SUCCEEDED
+	 tracking URL: http://ip-172-31-11-67.ec2.internal:20888/proxy/application_1616379581127_0001/
+	 user: hadoop
+21/03/22 02:26:18 INFO ShutdownHookManager: Shutdown hook called
+21/03/22 02:26:18 INFO ShutdownHookManager: Deleting directory /mnt/tmp/spark-850fecd4-34c0-43a8-abd4-abb66aabbb15
+21/03/22 02:26:18 INFO ShutdownHookManager: Deleting directory /mnt/tmp/spark-d4809cb7-09bb-4790-be70-85c8f361c210
+Command exiting with ret '0'
